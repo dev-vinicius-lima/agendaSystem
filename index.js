@@ -20,6 +20,10 @@ app.get('/', (req, res) => {
   res.send('Hello World!');
 });
 
+app.get('/cadastro', (req, res) => {
+  res.render('create');
+});
+
 app.listen(3333, () => {
   console.log('executing on port 3333!');
 });
